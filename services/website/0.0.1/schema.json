@@ -1,0 +1,15 @@
+{                                   
+	"$schema": "http://json-schema.org/draft-04/schema#",  
+	"type" : "object",              
+	"properties" : {                
+		"disallow" : {              
+			"description" : "a list of disallow directives", 
+			"type" : "array",       
+			"items": {              
+				"type": "string"
+			},                      
+			"uniqueItems": true     
+		}
+	},                              
+	"required": ["disallow"]        
+}

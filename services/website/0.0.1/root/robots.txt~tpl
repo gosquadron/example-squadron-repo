@@ -1,0 +1,5 @@
+User-agent: *
+#for @d in @disallow:
+Disallow: @d
+#end
+Allow: /humans.txt

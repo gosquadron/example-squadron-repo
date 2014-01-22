@@ -1,0 +1,19 @@
+{                                   
+	"$schema": "http://json-schema.org/draft-04/schema#",  
+	"type" : "object",              
+	"properties" : {                
+		"release" : {
+			"description" : "what to checkout from the git repository",
+			"type" : "string"
+		},
+		"disallow" : {              
+			"description" : "a list of disallow directives", 
+			"type" : "array",       
+			"items": {              
+				"type": "string"
+			},                      
+			"uniqueItems": true     
+		}
+	},                              
+	"required": ["disallow", "release"]
+}

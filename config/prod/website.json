@@ -2,7 +2,7 @@
     "base_dir": "/var/www", 
     "config": {
         "disallow":["/secret/*","/admin/*"],
-	"release":"master"
+	"release":"3db67491b8903fb1902654aff85ab027088d74fc"
     }, 
     "version": "0.0.1"
 }

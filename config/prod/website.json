@@ -1,0 +1,8 @@
+{
+    "base_dir": "/var/www", 
+    "config": {
+        "disallow":["/secret/*","/admin/*"],
+	"release":"master"
+    }, 
+    "version": "0.0.1"
+}

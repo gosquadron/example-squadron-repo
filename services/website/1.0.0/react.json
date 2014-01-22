@@ -1,1 +1,27 @@
-[]
+[
+    {    
+        "execute": ["run a2enmod php"],
+        "when" : {
+            "not_exist": "/etc/apache2/mods-enabled/php5"
+        }
+    },
+    {
+        "execute": ["start"],
+        "when" : {
+            "command": "/etc/init.d/apache2 status",
+            "exitcode_not": 0
+        }
+    },
+    {
+        "execute" : ["restart"],
+        "when" : {
+            "files" : ["mods-enabled/*"]
+        }
+    },
+    {
+        "execute" : ["reload"],
+        "when" : {
+            "files" : ["*.conf", "*/conf.d/*"]
+        }
+    }
+]

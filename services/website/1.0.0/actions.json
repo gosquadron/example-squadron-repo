@@ -1,6 +1,6 @@
 {
     "run a2enmod php": {
-        "commands": ["a2enmod php5", "/etc/init.d/apache2 restart"],
+        "commands": ["a2enmod php5", "/etc/init.d/apache2 restart"]
     },
     "start" : {
         "commands" : ["/etc/init.d/apache2 start"]

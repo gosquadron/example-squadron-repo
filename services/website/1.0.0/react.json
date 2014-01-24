@@ -2,7 +2,7 @@
     {    
         "execute": ["run a2enmod php"],
         "when" : {
-            "not_exist": "/etc/apache2/mods-enabled/php5"
+            "not_exist": ["/etc/apache2/mods-enabled/php5*"]
         }
     },
     {

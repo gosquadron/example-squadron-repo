@@ -1,1 +1,4 @@
-https://github.com/cxxr/example-squadron-repo.git @release
+{
+    "url":"https://github.com/cxxr/example-squadron-repo.git",
+    "refspec":"@release"
+}

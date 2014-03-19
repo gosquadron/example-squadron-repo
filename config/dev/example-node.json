@@ -1,0 +1,7 @@
+{
+    "base_dir": "/opt/example-node", 
+    "config": {
+        "version":"master"
+    }, 
+    "version": "0.0.1"
+}

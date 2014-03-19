@@ -1,0 +1,6 @@
+{
+    "install npm deps" : {
+        "commands" : ["npm install"],
+        "chdir" : "code"
+    }
+}

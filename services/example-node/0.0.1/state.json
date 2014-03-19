@@ -1,0 +1,10 @@
+[                                
+    {                            
+        "name":"apt",            
+        "parameters":["nodejs","nodejs-legacy","npm"]
+    },                           
+    {                            
+        "name":"npm",            
+        "parameters":["npm","grunt"]
+    }                            
+]

@@ -1,3 +1,6 @@
-{
-	"apt": ["apache2"]
-}
+[
+    {
+        "name":"apt",
+        "parameters":["apache2"]
+    }
+]

@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 # This is bash, but Squadron will run any executable or script (with the +x
 # flag on) in the test directory.
 
@@ -7,6 +7,9 @@
 while read line; do
     echo $line
 done
+
+# Node might need some time to set up
+sleep 5
 
 set -e
 RESULT=$(curl http://localhost:8888/test\?t\=5\&a\=4\&sean\=true\&b\=3\&num\=5 2>/dev/null)

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 # This is bash, but Squadron will run any executable or script (with the +x
 # flag on) in the test directory.
 
@@ -8,11 +8,9 @@ while read line; do
     echo $line
 done
 
+set -e
 RESULT=$(curl http://localhost:8888/test\?t\=5\&a\=4\&sean\=true\&b\=3\&num\=5 2>/dev/null)
 
-if [ "$!" == "0" ]; then
-    if [ "$RESULT" == "Total is 17" ]; then
-        exit 0
-    fi
+if [ "$RESULT" == "Total is 17" ]; then
+    exit 0
 fi
-exit 1

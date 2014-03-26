@@ -1,7 +1,7 @@
 [                                
     {                            
         "name":"apt",            
-        "parameters":["nodejs","nodejs-legacy","npm"]
+        "parameters":["nodejs","nodejs-legacy","npm","curl"]
     },                           
     {                            
         "name":"npm",            

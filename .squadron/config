@@ -1,0 +1,18 @@
+[daemon]
+polltime = 5
+
+[squadron]
+keydir = /home/vagrant/.squadron/keys
+nodename = override.example.com
+statedir = /home/vagrant/.squadron/state
+send_status = false
+
+[webhook]
+webhook = true
+webhook_username = authusername
+webhook_password = authpassword
+webhook_listen = 0.0.0.0
+webhook_port = 56593
+
+[log]
+debuglog = DEBUG stream stderr

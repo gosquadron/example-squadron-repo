@@ -4,5 +4,18 @@
         "when": {
             "files":["code/package.json"]
         }
+    },
+    {
+        "execute":["start"],
+        "when": {
+            "command":"forever list | grep index.js",
+            "exitcode_not": 0
+        }
+    },
+    {
+        "execute":["restart"],
+        "when": {
+            "files":["*"]
+        }
     }
 ]

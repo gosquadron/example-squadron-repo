@@ -2,5 +2,14 @@
     "install npm deps" : {
         "commands" : ["npm install"],
         "chdir" : "code"
+    },
+    "start" : {
+        "commands" : ["forever start index.js"],
+        "chdir" : "code"
+    },
+    "restart" : {
+        "commands" : ["forever restart index.js"],
+        "chdir" : "code",
+        "not_after" : ["start"]
     }
 }

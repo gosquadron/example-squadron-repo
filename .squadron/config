@@ -1,5 +1,5 @@
 [daemon]
-polltime = 5
+polltime = 60
 
 [squadron]
 keydir = /home/vagrant/.squadron/keys

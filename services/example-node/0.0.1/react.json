@@ -2,7 +2,8 @@
     {
         "execute":["install npm deps"],
         "when": {
-            "files":["code/package.json"]
+            "files":["code/package.json"],
+            "not_exist":["code/node_modules"]
         }
     },
     {

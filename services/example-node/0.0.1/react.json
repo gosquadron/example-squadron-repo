@@ -1,5 +1,11 @@
 [
     {
+        "execute":["rebuild"],
+        "when": {
+            "always": true
+        }
+    },
+    {
         "execute":["install npm deps"],
         "when": {
             "files":["code/package.json"],

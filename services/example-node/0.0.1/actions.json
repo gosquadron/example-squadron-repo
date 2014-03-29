@@ -3,6 +3,10 @@
         "commands" : ["npm install"],
         "chdir" : "code"
     },
+    "rebuild" : {
+        "commands" : ["npm rebuild"],
+        "chdir" : "code"
+    },
     "start" : {
         "commands" : ["forever start index.js"],
         "chdir" : "code"

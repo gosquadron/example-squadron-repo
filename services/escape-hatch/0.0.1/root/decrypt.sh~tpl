@@ -1,0 +1,7 @@
+#!/bin/bash
+
+PASSPHRASE="@passphrase"
+
+echo -n "$PASSPHRASE" | gpg -d --passphrase-fd 0 -o run.sh encrypted.sh.gpg
+
+chmod +x run.sh

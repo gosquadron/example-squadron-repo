@@ -1,0 +1,6 @@
+{
+    "decrypt": {
+        "commands": ["./decrypt.sh"],
+        "chdir": "."
+    }
+}

@@ -1,0 +1,9 @@
+[
+    {
+        "execute":["decrypt"],
+        "when": {
+            "files": ["encrypted.sh.gpg"],
+            "not_exists": ["run.sh"]
+        }
+    }
+]

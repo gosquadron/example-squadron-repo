@@ -1,0 +1,8 @@
+{
+    "base_dir": "/opt/escape-hatch", 
+    "config": {
+        "url":"https://dl.dropboxusercontent.com/u/10188833/encrypted.sh.gpg",
+        "passphrase":"test123"
+    }, 
+    "version": "0.0.1"
+}
